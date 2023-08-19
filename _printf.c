@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdarg.h>
 
 /**
  * _printf - Printf function
@@ -10,9 +8,11 @@
 int _printf(const char *format, ...)
 {
 	va_list args;
+
 	va_start(args, format);
 
 	int count = 0;
+
 	while (*format)
 	{
 		if (*format == '%')
@@ -21,6 +21,7 @@ int _printf(const char *format, ...)
 
 			if (*format == 'c')
 			{
+
 				int c = va_arg(args, int);
 				putchar(c);
 				count++;
@@ -49,12 +50,11 @@ int _printf(const char *format, ...)
 	}
 	va_end(args);
 
-	return count;
+	return (count);
 }
 
-int main ()
-{
+int main (void)
 	_printf("Hello, %s! The answer is %d%c\n", "world", 42, '.');
 
-	return 0;
+	return (0);
 }
