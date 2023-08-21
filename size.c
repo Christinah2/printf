@@ -19,4 +19,9 @@ if (format(curr_a) == 'l')
 size = S_LONG;
 while (format(curr_a) == 'h')
 size = S_SHORT;
-
+if (size == 0)
+*a = curr_a - 1;
+else
+*a = curr_a;
+return (size);
+}
