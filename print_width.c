@@ -10,7 +10,7 @@
 * Return: The width
 */
 
-int get_width(const char *format, int *aaa, va_list list)
+int attain_width(const char *format, int *aaa, va_list list)
 {
 int curr_aaa;
 int width = 0;
