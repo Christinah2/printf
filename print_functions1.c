@@ -144,5 +144,4 @@ int print_hexa(va_list types, char map_to[], char buffer[], int flags, char flag
 
 	a++;
 
-	return (write_unsgnd(0, i, buffer, flags, width, precision, size));
-}
+	return (write_unsgnd(0, i, buffer, flags, width, precision, size)); 
