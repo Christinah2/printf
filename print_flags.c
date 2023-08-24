@@ -3,13 +3,13 @@
 #include <stdlib.h>
 
 /**
-* attain_flags -It Calculates the flags that are active
+* get_flags -It Calculates the flags that are active
 * @i: It takes a parameter
 * @format: The formatted string in which the argument is printed
 * Return: The flags
 */
 
-int attain_flags(const char *format, int *i)
+int get_flags(const char *format, int *i)
 {
 /* - + 0 # ' ' */
 /* 1 2 4 8 16 */

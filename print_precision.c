@@ -3,14 +3,14 @@
 #include <stdlib.h>
 
 /**
-* attain_precision - It Calculates the printing precision
+* get_precision - It Calculates the printing precision
 * @a: The list of printed arguments
 * @list: The list of arguments
 * @format: The formatted string to print the arguments
 * Return: Precision.
 */
 
-int attain_precision(const char *format, int *a, va_list list)
+int get_precision(const char *format, int *a, va_list list)
 {
 int curr_a = *a + 1;
 int precision = -1;
