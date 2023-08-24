@@ -7,7 +7,7 @@
  * @a: The list of printed arguments
  * @format: The format that prints the argumets
  * Print format as a string
- * Return: The precision
+ * Return: The size
  */
 
 int get_size(const char *format, int *a)
