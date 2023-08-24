@@ -15,9 +15,9 @@ int attain_size(const char *format, int *a)
 int size = 0;
 int curr_a = *a + 1;
 
-if (format(curr_a) == 'l')
+if (format[curr_a] == 'l')
 size = S_LONG;
-while (format(curr_a) == 'h')
+while (format[curr_a] == 'h')
 size = S_SHORT;
 if (size == 0)
 *a = curr_a - 1;
