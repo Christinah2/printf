@@ -95,7 +95,7 @@ int print_hexadecimal(va_list types, char buffer[],
 		flags, 'x', width, precision, size));
 }
 
-/************* This will print an unsigned number in upper Hexadecimal  **************/
+/********* This will print an unsigned number in upper Hexadecimal  **********/
 /**
  * print_hexa_upper - Prints an unsigned number in upper hexadecimal notation
  * @types: Lista of arguments
